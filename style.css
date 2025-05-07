@@ -13,20 +13,36 @@ body{
   .Container {
     display: flex;
     flex-wrap: wrap;
-    max-width: 800px;
-    min-width: 800px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
     border: 2px solid black;
     padding: 10px;
   }
   
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    gap: 12px;
+  }
+
   .box {
     border: 1px solid black;
-    max-width: 25px;
-    max-height: 25px;
-    flex: 1;
+    max-width: 75px;
+    max-height: 75px;
+    flex: 0 0 500px;
+    height: 750px;
   }
 
   .highlight {
     background-color: aqua;
+  }
+
+  .popup {
+    background-color: aquamarine;
+    border-radius: 8px;
+    padding: 12px;
   }
   
