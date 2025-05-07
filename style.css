@@ -13,20 +13,20 @@ body{
   .Container {
     display: flex;
     flex-wrap: wrap;
-    max-width: 8000px;
+    max-width: 800px;
+    min-width: 800px;
     border: 2px solid black;
     padding: 10px;
   }
   
   .box {
     border: 1px solid black;
-    height: 25px;
-    width: 25px;
+    max-width: 25px;
+    max-height: 25px;
     flex: 1;
   }
+
+  .highlight {
+    background-color: aqua;
+  }
   
-  /* .container>div:nth-child(16n + 1) {
-    width: 100%;
-    border: 0;
-    height: 0;
-  } */

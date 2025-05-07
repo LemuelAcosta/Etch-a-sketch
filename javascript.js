@@ -1,12 +1,22 @@
-const container = document.querySelector("#Container");
+const CONTAINER = document.querySelector("#Container");
 
 let boxes = 256;
-let grid = document.createElement("div")
+drawBoxes(boxes);
+// let grid = document.createElement("div")
 
-
-for (i = 1; i<=boxes; i++) {
-    const grid = document.createElement("div");
-    grid.classList.add("box");
-    grid.textContent = i
-    container.appendChild(grid);
+function drawBoxes(boxes) {
+    for (i = 1; i<=boxes; i++) {
+        const GRID = document.createElement("div");
+        GRID.classList.add("box");
+        GRID.textContent = i
+        CONTAINER.appendChild(GRID);
+    }
 }
+
+
+CONTAINER.addEventListener('mouseenter', (event) => {
+    if (event.target.classList.contains('box')) {
+      event.target.classList.add('highlight');
+    }
+  }, true); 
+
